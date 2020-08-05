@@ -1,0 +1,517 @@
+:root {
+  --color-primario: #ffffff;
+  --color-segumdario: #536dfe;
+  --color-rayabala: #3f51b5;
+  --color-titulo-section: #000000;
+  --color-subtitulo-card: #3f3f3f;
+  --color-border-card: #f2f2f2;
+  --color-card: #6173ef;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+}
+
+/* GLOBAL */
+.titulo {
+  color: var(--color-titulo-section);
+  font-size: 40px;
+  text-align: center;
+  margin-top: 3px;
+}
+
+hr {
+  width: 40px;
+  height: 4px;
+  background-color: var(--color-rayabala);
+  margin: 10px 0 70px 430px;
+}
+
+.contenedor {
+  padding: 70px 0px;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* SECTION HEADER */
+/* .contenedor__logo img {
+  width: 40px;
+} */
+
+header {
+  width: 100%;
+  height: 580px;
+  background: linear-gradient(
+      180deg,
+      #7e8ee8 0%,
+      rgba(71, 83, 149, 0.619311) 52.24%,
+      rgba(67, 82, 167, 0.276362) 78.26%,
+      rgba(63, 81, 181, 0) 100%
+    ),
+    url(../img/sonrisa.svg);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.content__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 125px;
+}
+
+.contenedor__logo {
+  margin-left: 50px;
+}
+.contenedor__logo span {
+  color: var(--color-primario);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.contenedor__menu {
+  margin-right: 50px;
+}
+
+.contenedor__menu a {
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 15px;
+  color: var(--color-primario);
+}
+
+.contenedor__menu a:nth-child(5) {
+  border: 2px solid var(--color-primario);
+  padding: 8px 15px;
+  border-radius: 50px;
+}
+
+.textos__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+}
+
+.textos__header__btn {
+  color: var(--color-primario);
+  font-size: 20px;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 50px;
+  background-color: var(--color-segumdario);
+  text-decoration: none;
+}
+
+.textos__header__btn:hover {
+  color: var(--color-rayabala);
+  font-size: 20px;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 50px;
+  background-color: var(--color-primario);
+  text-decoration: none;
+}
+
+.textos__header h1 {
+  color: var(--color-primario);
+  line-height: 70px;
+  letter-spacing: 2px;
+  font-size: 40px;
+}
+
+.textos__header h2 {
+  color: var(--color-primario);
+  line-height: 60px;
+  font-size: 26px;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.textos__header h3 {
+  color: var(--color-primario);
+  line-height: 70px;
+  font-size: 26px;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+.wave {
+  width: 100%;
+}
+
+.wave img {
+  width: 1100px;
+}
+
+/* SEVTION SERVICES */
+
+.contenedor__card {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+
+.contenedor__card .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 242px;
+  height: 350px;
+  box-shadow: 2px 4px 6px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 17px;
+  margin-bottom: 50px;
+}
+
+.contenedor__card img {
+  width: 130px;
+  height: 130px;
+  margin-bottom: 30px;
+  /* border: 1px solid var(--color-border-card); */
+}
+
+.contenedor__card .card-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 3px;
+}
+
+.card h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: var(--color-titulo-section);
+  text-align: center;
+}
+
+.card p {
+  font-size: 15px;
+  font-weight: normal;
+  text-align: center;
+  margin: 0 5px;
+  color: var(--color-subtitulo-card);
+}
+
+/* SECTION APARTADO DE CITAS */
+.section__cita {
+  width: 100%;
+  height: 120px;
+  background-color: var(--color-segumdario);
+  overflow: hidden;
+}
+
+.contenedor__cita {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+}
+
+.contenedor__cita .texto_cita p {
+  font-size: 25px;
+  line-height: 40px;
+  font-weight: bolder;
+  color: var(--color-primario);
+}
+
+.section__cita a {
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--color-subtitulo-card);
+  background-color: var(--color-primario);
+  filter: drop-shadow(7px 10px 2px rgba(6, 6, 6, 0.24));
+  /* -webkit-box-shadow: 1px 1px 17px 4px rgba(143, 143, 143, 0.699);
+  -moz-box-shadow: 1px 1px 17px 4px rgba(143, 143, 143, 1);
+  box-shadow: 1px 1px 17px 4px rgba(143, 143, 143, 1); */
+  border-radius: 9px;
+  padding: 10px 20px;
+}
+.section__cita a:hover {
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--color-primario);
+  background-color: rgb(39, 35, 35, 0.9);
+  filter: drop-shadow(7px 10px 2px rgba(6, 6, 6, 0.24));
+  border-radius: 9px;
+  padding: 10px 20px;
+}
+
+/* SECTION DE ABOUT US */
+.contenedor__about {
+  background-color: var(--color-border-card);
+}
+
+.card__about {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.card__about img {
+  width: 35%;
+}
+
+.card__about .about__texto {
+  margin-top: 30px;
+  width: 55%;
+}
+
+.card__about p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+.about__texto h2:nth-child(1) {
+  font-size: 30px;
+  line-height: 50px;
+  letter-spacing: 1px;
+  border-left: 2px solid var(--color-rayabala);
+  padding-left: 3px;
+}
+
+.about__texto h2:nth-child(2) {
+  font-size: 25px;
+  line-height: 80px;
+}
+
+.contenedor__about .contenedor {
+  margin-bottom: 20px;
+}
+
+/* SECTION DOCTORS */
+.contenedor__card__doctors {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+
+.contenedor__card__doctors .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 242px;
+  height: 350px;
+  box-shadow: 2px 4px 6px 5px rgb(225, 228, 240);
+  border-radius: 17px;
+  margin-bottom: 50px;
+  background-color: var(--color-card);
+  /* background-color: var(--color-segumdario); */
+}
+
+.section__doctors .subtitulo {
+  font-size: 30px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section__doctors img {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 30px;
+  border: 1px solid var(--color-border-card);
+  border: none;
+}
+
+.section__doctors .contenedor-texto p {
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+  color: var(--color-primario);
+}
+.section__doctors .contenedor-texto h2 {
+  color: var(--color-primario);
+}
+
+/* SECTION CONTACT US */
+.section__contact {
+  background-color: var(--color-border-card);
+}
+
+.section__contact .contenedor__texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section__contact .contenedor__texto h2 {
+  font-size: 30px;
+  line-height: 80px;
+}
+.section__contact .contenedor__texto p {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contenedor__img {
+  overflow: hidden;
+  width: 1500px;
+}
+
+.contenedor__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.contenedor__formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.formulario input:nth-child(1),
+input:nth-child(2),
+input:nth-child(4),
+input:nth-child(5) {
+  width: 206px;
+  height: 45px;
+  background: var(--color-primario);
+  border: 1px solid #b6adad;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.formulario input:nth-child(3) {
+  width: 442px;
+  height: 45px;
+  box-sizing: border-box;
+  border: 1px solid #b6adad;
+  margin-bottom: 30px;
+}
+
+.formulario .textarea {
+  width: 442px;
+  height: 100px;
+  box-sizing: border-box;
+  border: 1px solid #b6adad;
+  margin-bottom: 30px;
+}
+
+.contac__hr {
+  width: 40px;
+  height: 4px;
+  background-color: var(--color-rayabala);
+  margin: 10px 0 40px 430px;
+}
+
+.textarea::placeholder {
+  font-size: 15px;
+}
+
+/* input:focus {
+  border-color: var(--color-segumdario);
+} */
+
+.formulario .button {
+  width: 170px;
+  height: 35px;
+  border-radius: 50px;
+  border: none;
+  background-color: var(--color-segumdario);
+  color: var(--color-primario);
+  font-weight: bold;
+}
+
+.formulario .button:hover {
+  width: 170px;
+  height: 35px;
+  border-radius: 50px;
+  border: 1px solid var(--color-segumdario);
+  background-color: var(--color-primario);
+  color: var(--color-segumdario);
+  font-weight: bold;
+}
+
+input:focus {
+  font-size: 15px;
+}
+
+/* SECTION FOOTER */
+footer {
+  background-color: var(--color-segumdario);
+}
+
+.footer_contenedor {
+  width: 90%;
+  height: 250px;
+  margin: auto;
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.footer__contact h2 {
+  text-align: center;
+  margin: 35px 0;
+  color: var(--color-primario);
+}
+
+.footer__espaceado {
+  margin: 20px 0 40px 105px;
+  padding: 0;
+  width: 700px;
+}
+
+.contact__numero {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact__numero p {
+  color: var(--color-primario);
+}
+
+.derecho__autor p {
+  text-align: center;
+  color: var(--color-primario);
+}
+
+.footer__iconos {
+  float: right;
+}
+
+.footer__iconos img {
+  width: 30px;
+}
+
+.footer__iconos img:hover {
+  width: 30px;
+  background-color: var(--color-primario);
+  border-radius: 100px;
+}
