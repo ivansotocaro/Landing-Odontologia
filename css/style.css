@@ -34,7 +34,7 @@ hr {
 .contenedor {
   padding: 70px 0px;
   width: 90%;
-  max-width: 1000px;
+  max-width: 1300px;
   margin: auto;
   overflow: hidden;
 }
@@ -54,7 +54,7 @@ header {
       rgba(67, 82, 167, 0.276362) 78.26%,
       rgba(63, 81, 181, 0) 100%
     ),
-    url(../img/sonrisa.svg);
+    url(../img/sonrisa2.svg);
   object-fit: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -153,16 +153,29 @@ header {
 }
 
 .wave img {
-  width: 1100px;
+  width: 1366px;
 }
 
 /* SEVTION SERVICES */
 
-.contenedor__card {
+/* .contenedor__card {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 15px;
+} */
+
+.contenedor__card__flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contenedor__card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 50px;
+  grid-column-gap: 80px;
 }
 
 .contenedor__card .card {
@@ -174,7 +187,7 @@ header {
   height: 350px;
   box-shadow: 2px 4px 6px 5px rgba(0, 0, 0, 0.05);
   border-radius: 17px;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 
 .contenedor__card img {
