@@ -17,18 +17,25 @@
 }
 
 /* GLOBAL */
+
+.contenedor__grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .titulo {
   color: var(--color-titulo-section);
   font-size: 40px;
   text-align: center;
-  margin-top: 3px;
+  margin: 3px 0 70px 0;
+  /* margin-top: 3px; */
 }
 
 hr {
   width: 40px;
   height: 4px;
   background-color: var(--color-rayabala);
-  margin: 10px 0 70px 430px;
 }
 
 .contenedor {
@@ -55,10 +62,12 @@ header {
       rgba(63, 81, 181, 0) 100%
     ),
     url(../img/sonrisa2.svg);
-  object-fit: cover;
-  background-repeat: no-repeat;
+  width: 100%;
+  /* height: auto; */
+  /* object-fit: cover;
+  background-repeat: no-repeat; */
   background-attachment: fixed;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .content__header {
@@ -148,12 +157,18 @@ header {
   font-weight: 300;
 }
 
-.wave {
+.wave img {
   width: 100%;
+  height: auto;
+  max-width: 1800px;
 }
 
-.wave img {
-  width: 1366px;
+.wave {
+  position: absolute;
+  width: 100%;
+  /* height: auto; */
+  /* bottom: 0px; */
+  top: 400px;
 }
 
 /* SEVTION SERVICES */
@@ -165,17 +180,10 @@ header {
   padding: 15px;
 } */
 
-.contenedor__card__flex {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
 .contenedor__card {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-row-gap: 50px;
-  grid-column-gap: 80px;
 }
 
 .contenedor__card .card {
@@ -274,15 +282,14 @@ header {
 
 .card__about {
   display: flex;
-  justify-content: space-between;
-  width: 90%;
+  justify-content: space-evenly;
   margin: auto;
   overflow: hidden;
   margin-top: 30px;
 }
 
 .card__about img {
-  width: 35%;
+  width: 30%;
 }
 
 .card__about .about__texto {
@@ -314,10 +321,8 @@ header {
 
 /* SECTION DOCTORS */
 .contenedor__card__doctors {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .contenedor__card__doctors .card {
