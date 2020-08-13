@@ -226,56 +226,60 @@
               <img src="img/formulario.svg" alt="Imagen" />
             </div>
 
-            <div class="formulario">
-              <input
-                class="red-input"
-                type="text"
-                name="FullName"
-                placeholder="  Full Name"
-              />
-              <input
-                type="text"
-                name="PhoneNumber"
-                placeholder="  Phone Number"
-              />
-              <input type="text" name="E-mail" placeholder="  E-mail." />
-              <input type="text" name="dd/mm/aaaa" placeholder="  dd/mm/aaaa" />
-              <input type="text" name="AnyTime" placeholder="  Any Time" />
+            <div class="formulario__flex">
+              <div class="formulario">
+                <input
+                  class="red-input"
+                  type="text"
+                  name="FullName"
+                  placeholder="  Full Name"
+                />
+                <input
+                  type="text"
+                  name="PhoneNumber"
+                  placeholder="  Phone Number"
+                />
+                <input type="text" name="E-mail" placeholder="  E-mail." />
+                <input
+                  type="date"
+                  name="dd/mm/aaaa"
+                  placeholder="  dd/mm/aaaa"
+                />
+                <input type="text" name="AnyTime" placeholder="  Any Time" />
 
-              <textarea
-                class="textarea"
-                name="texto"
-                placeholder="  Notes for the doctor"
-              ></textarea>
+                <textarea
+                  class="textarea"
+                  name="texto"
+                  placeholder="  Notes for the doctor"
+                ></textarea>
 
-              <button class="button">Send</button>
+                <button class="button">Send</button>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <footer>
-        <div class="footer_contenedor">
-          <div class="footer__contact">
-            <h2>Contact</h2>
-            <div class="contact__numero">
-              <p>comsultas@cita.com</p>
-              <p>(+57)3014528964</p>
-            </div>
+        <div class="contenedor-footer">
+          <div class="content-foo">
+            <h4>Phone</h4>
+            <p>944255</p>
           </div>
 
-          <!-- <hr class="footer__espaceado" /> -->
+          <div class="content-foo">
+            <h4>Email</h4>
+            <p>Rteeth@hotmail.com</p>
+          </div>
 
-          <div class="derecho__autor">
-            <p>Todos los derechos reservados R.teeth | &copy; Ivan Soto</p>
-
-            <div class="footer__iconos">
-              <a href="#"><img src="img/facebook.svg" alt="iconos" /></a>
-              <a href="#"><img src="img/instagram.svg" alt="iconos" /></a>
-              <a href="#"><img src="img/Twitter.svg" alt="iconos" /></a>
-            </div>
+          <div class="content-foo">
+            <h4>Location</h4>
+            <p>Calle 73 D</p>
           </div>
         </div>
+        <h2 class="titulo-final">
+          &copy;SotoDesign | R.Teeth
+        </h2>
       </footer>
     </main>
   </body>

@@ -32,16 +32,10 @@
   /* margin-top: 3px; */
 }
 
-hr {
-  width: 40px;
-  height: 4px;
-  background-color: var(--color-rayabala);
-}
-
 .contenedor {
   padding: 70px 0px;
-  width: 90%;
-  max-width: 1300px;
+  width: 95%;
+  max-width: 1500px;
   margin: auto;
   overflow: hidden;
 }
@@ -159,7 +153,7 @@ header {
 
 .wave img {
   width: 100%;
-  height: auto;
+  /* height: auto; */
   max-width: 1800px;
 }
 
@@ -168,7 +162,7 @@ header {
   width: 100%;
   /* height: auto; */
   /* bottom: 0px; */
-  top: 400px;
+  top: 450px;
 }
 
 /* SEVTION SERVICES */
@@ -386,27 +380,29 @@ header {
   margin-bottom: 50px;
 }
 
-.contenedor__img {
-  overflow: hidden;
-  width: 1500px;
+.section__contact .contenedor__formulario {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  /* grid-template-columns: repeat(2, 2fr); */
 }
 
 .contenedor__img img {
   width: 100%;
-  height: 100%;
+  min-width: 350;
 }
 
-.contenedor__formulario {
+.formulario__flex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .formulario {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: minmax(200px, 270px);
+  grid-template-rows: repeat(5, 80px);
+  grid-column-gap: 20px;
 }
 
 .formulario input:nth-child(1),
@@ -415,121 +411,245 @@ input:nth-child(4),
 input:nth-child(5) {
   width: 206px;
   height: 45px;
-  background: var(--color-primario);
-  border: 1px solid #b6adad;
-  box-sizing: border-box;
-  margin-bottom: 30px;
 }
 
 .formulario input:nth-child(3) {
-  width: 442px;
+  grid-column: 1 / span 2;
   height: 45px;
-  box-sizing: border-box;
-  border: 1px solid #b6adad;
-  margin-bottom: 30px;
 }
 
-.formulario .textarea {
-  width: 442px;
-  height: 100px;
-  box-sizing: border-box;
-  border: 1px solid #b6adad;
-  margin-bottom: 30px;
+.formulario textarea:nth-child(6) {
+  grid-column: 1 / span 2;
 }
-
-.contac__hr {
-  width: 40px;
-  height: 4px;
-  background-color: var(--color-rayabala);
-  margin: 10px 0 40px 430px;
-}
-
-.textarea::placeholder {
-  font-size: 15px;
-}
-
-/* input:focus {
-  border-color: var(--color-segumdario);
-} */
 
 .formulario .button {
-  width: 170px;
-  height: 35px;
-  border-radius: 50px;
-  border: none;
-  background-color: var(--color-segumdario);
-  color: var(--color-primario);
-  font-weight: bold;
-}
-
-.formulario .button:hover {
-  width: 170px;
-  height: 35px;
-  border-radius: 50px;
-  border: 1px solid var(--color-segumdario);
-  background-color: var(--color-primario);
-  color: var(--color-segumdario);
-  font-weight: bold;
-}
-
-input:focus {
-  font-size: 15px;
+  grid-column: 1 / span 2;
+  height: 40px;
+  margin-top: 35px;
 }
 
 /* SECTION FOOTER */
 footer {
   background-color: var(--color-segumdario);
-}
-
-.footer_contenedor {
-  width: 90%;
-  height: 250px;
+  padding: 60px 0px 30px 0px;
   margin: auto;
+  overflow: hidden;
 }
 
-.footer__contact {
+.contenedor-footer {
   display: flex;
-  flex-direction: column;
-  /* justify-content: center;
-  align-items: center; */
-}
-
-.footer__contact h2 {
-  text-align: center;
-  margin: 35px 0;
-  color: var(--color-primario);
-}
-
-.footer__espaceado {
-  margin: 20px 0 40px 105px;
-  padding: 0;
-  width: 700px;
-}
-
-.contact__numero {
-  display: flex;
+  width: 90%;
   justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ccc;
 }
 
-.contact__numero p {
-  color: var(--color-primario);
-}
-
-.derecho__autor p {
+.content-foo {
   text-align: center;
+}
+
+.content-foo h4 {
+  color: #fff;
+  border-bottom: 3px solid var(--color-border-card);
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.content-foo p {
+  color: #ccc;
+}
+
+.titulo-final {
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0px 0px 0px;
+  color: #ccc;
+}
+
+.formulario .button {
+  border: none;
+  text-transform: uppercase;
+  background-color: var(--color-segumdario);
+  border-radius: 10px;
   color: var(--color-primario);
 }
 
-.footer__iconos {
-  float: right;
-}
-
-.footer__iconos img {
-  width: 30px;
-}
-
-.footer__iconos img:hover {
-  width: 30px;
+.formulario .button:hover {
+  text-transform: uppercase;
   background-color: var(--color-primario);
-  border-radius: 100px;
+  border-radius: 10px;
+  color: var(--color-segumdario);
+  border: 1px solid var(--color-segumdario);
+  font-weight: bolder;
+}
+
+/* END FOOTER */
+
+/*----------------------------------------------------------------------*/
+
+@media screen and (max-width: 900px) {
+  /* GLOBAL */
+  .titulo {
+    color: var(--color-titulo-section);
+    font-size: 30px;
+    text-align: center;
+    margin: 3px 0 70px 0;
+    /* margin-top: 3px; */
+  }
+  /* HEADER */
+
+  .wave {
+    position: absolute;
+    width: 100%;
+    /* height: auto; */
+    /* bottom: 0px; */
+    top: 500px;
+  }
+  .textos__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+  }
+
+  .textos__header h1 {
+    color: var(--color-primario);
+    line-height: 70px;
+    letter-spacing: 2px;
+    font-size: 30px;
+  }
+
+  .textos__header h2 {
+    color: var(--color-primario);
+    line-height: 60px;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 700;
+  }
+
+  .textos__header h3 {
+    color: var(--color-primario);
+    line-height: 70px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 300;
+  }
+
+  /* SERVICES */
+  .contenedor__card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 50px;
+  }
+
+  /* SECTION CITA */
+  .contenedor__cita .texto_cita p {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bolder;
+    color: var(--color-primario);
+  }
+
+  .section__cita a {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--color-subtitulo-card);
+    background-color: var(--color-primario);
+    filter: drop-shadow(7px 10px 2px rgba(6, 6, 6, 0.24));
+    border-radius: 9px;
+    padding: 10px 20px;
+  }
+  .section__cita a:hover {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--color-primario);
+    background-color: rgb(39, 35, 35, 0.9);
+    filter: drop-shadow(7px 10px 2px rgba(6, 6, 6, 0.24));
+    border-radius: 9px;
+    padding: 10px 20px;
+  }
+
+  /* ABOUT US */
+
+  .card__about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 30px;
+  }
+
+  .card__about .about__texto {
+    margin-top: 30px;
+    width: 90%;
+  }
+
+  .about__texto h2:nth-child(1) {
+    text-align: center;
+    font-size: 30px;
+    line-height: 50px;
+    letter-spacing: 1px;
+    border-left: none;
+    border-bottom: 1px solid var(--color-segumdario);
+  }
+
+  .about__texto h2:nth-child(2) {
+    text-align: center;
+    font-size: 25px;
+    line-height: 80px;
+  }
+
+  .card__about p {
+    font-size: 20px;
+    text-align: justify;
+  }
+
+  /* DOCTORS */
+  .contenedor__card__doctors {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .section__doctors .subtitulo {
+    font-size: 25px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .contenedor__card__doctors .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 370px;
+    height: 200px;
+    box-shadow: 2px 4px 6px 5px rgb(225, 228, 240);
+    border-radius: 17px;
+    margin-bottom: 50px;
+    background-color: var(--color-card);
+    /* background-color: var(--color-segumdario); */
+  }
+
+  .section__doctors img {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 0px;
+    border: 1px solid var(--color-border-card);
+    border: none;
+  }
+
+  /* CONTACT US */
+  .section__contact .contenedor__formulario {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .contenedor__img img {
+    display: none;
+  }
 }
