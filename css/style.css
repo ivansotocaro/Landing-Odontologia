@@ -29,7 +29,6 @@
   font-size: 40px;
   text-align: center;
   margin: 3px 0 70px 0;
-  /* margin-top: 3px; */
 }
 
 hr {
@@ -45,12 +44,6 @@ hr {
   margin: auto;
   overflow: hidden;
 }
-
-/* SECTION HEADER */
-/* .contenedor__logo img {
-  width: 40px;
-} */
-
 header {
   width: 100%;
   height: 580px;
@@ -63,11 +56,7 @@ header {
     ),
     url(../img/sonrisa2.svg);
   width: 100%;
-  /* height: auto; */
-  /* object-fit: cover;
-  background-repeat: no-repeat; */
   background-attachment: fixed;
-  /* overflow: hidden; */
 }
 
 .content__header {
@@ -157,28 +146,17 @@ header {
   font-weight: 300;
 }
 
+.wave {
+  position: absolute;
+  width: 100%;
+  top: 400px;
+}
+
 .wave img {
   width: 100%;
   height: auto;
   max-width: 1800px;
 }
-
-.wave {
-  position: absolute;
-  width: 100%;
-  /* height: auto; */
-  /* bottom: 0px; */
-  top: 400px;
-}
-
-/* SEVTION SERVICES */
-
-/* .contenedor__card {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 15px;
-} */
 
 .contenedor__card {
   display: grid;
@@ -195,14 +173,12 @@ header {
   height: 350px;
   box-shadow: 2px 4px 6px 5px rgba(0, 0, 0, 0.05);
   border-radius: 17px;
-  /* margin-bottom: 50px; */
 }
 
 .contenedor__card img {
   width: 130px;
   height: 130px;
   margin-bottom: 30px;
-  /* border: 1px solid var(--color-border-card); */
 }
 
 .contenedor__card .card-texto {
@@ -259,9 +235,6 @@ header {
   color: var(--color-subtitulo-card);
   background-color: var(--color-primario);
   filter: drop-shadow(7px 10px 2px rgba(6, 6, 6, 0.24));
-  /* -webkit-box-shadow: 1px 1px 17px 4px rgba(143, 143, 143, 0.699);
-  -moz-box-shadow: 1px 1px 17px 4px rgba(143, 143, 143, 1);
-  box-shadow: 1px 1px 17px 4px rgba(143, 143, 143, 1); */
   border-radius: 9px;
   padding: 10px 20px;
 }
@@ -490,8 +463,7 @@ footer {
 .footer__contact {
   display: flex;
   flex-direction: column;
-  /* justify-content: center;
-  align-items: center; */
+  align-items: center; 
 }
 
 .footer__contact h2 {
