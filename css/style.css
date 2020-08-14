@@ -162,7 +162,7 @@ header {
   width: 100%;
   /* height: auto; */
   /* bottom: 0px; */
-  top: 450px;
+  top: 430px;
 }
 
 /* SEVTION SERVICES */
@@ -651,5 +651,224 @@ footer {
 
   .contenedor__img img {
     display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* GLOBAL */
+  .titulo {
+    color: var(--color-titulo-section);
+    font-size: 25px;
+    text-align: center;
+    margin: 3px 0 70px 0;
+    /* margin-top: 3px; */
+  }
+
+  .wave {
+    position: absolute;
+    width: 100%;
+    /* height: auto; */
+    /* bottom: 0px; */
+    top: 530px;
+  }
+
+  /* HEADER */
+  .textos__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+  }
+
+  .textos__header h1 {
+    color: var(--color-primario);
+    /* line-height: 70px; */
+    letter-spacing: 2px;
+    font-size: 25px;
+  }
+
+  .textos__header h2 {
+    color: var(--color-primario);
+    line-height: 20px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .textos__header h3 {
+    color: var(--color-primario);
+    line-height: 70px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+
+  .textos__header__btn {
+    color: var(--color-primario);
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 50px;
+    background-color: var(--color-segumdario);
+    text-decoration: none;
+  }
+
+  .textos__header__btn:hover {
+    color: var(--color-rayabala);
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 50px;
+    background-color: var(--color-primario);
+    text-decoration: none;
+  }
+
+  /* SERVICES */
+
+  .contenedor__card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 50px;
+  }
+  .contenedor__card .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 350px;
+    box-shadow: 2px 4px 6px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 17px;
+    /* margin-bottom: 50px; */
+  }
+
+  .contenedor__card img {
+    width: 110px;
+    height: 130px;
+    margin-bottom: 30px;
+    /* border: 1px solid var(--color-border-card); */
+  }
+
+  .contenedor__card .card-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+  }
+
+  .card h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: var(--color-titulo-section);
+    text-align: center;
+  }
+
+  /* SECTION CITA */
+  .contenedor__cita .texto_cita p {
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: bolder;
+    color: var(--color-primario);
+  }
+
+  .section__cita a {
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--color-subtitulo-card);
+    background-color: var(--color-primario);
+    filter: drop-shadow(7px 10px 2px rgba(6, 6, 6, 0.24));
+    border-radius: 9px;
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+  .section__cita a:hover {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--color-primario);
+    background-color: rgb(39, 35, 35, 0.9);
+    filter: drop-shadow(7px 10px 2px rgba(6, 6, 6, 0.24));
+    border-radius: 9px;
+    padding: 10px 20px;
+  }
+
+  /* ABOUT US */
+
+  .about__texto h2:nth-child(1) {
+    text-align: center;
+    font-size: 25px;
+    line-height: 50px;
+    letter-spacing: 1px;
+    border-left: none;
+    border-bottom: 1px solid var(--color-segumdario);
+  }
+
+  .about__texto h2:nth-child(2) {
+    text-align: center;
+    font-size: 20px;
+    line-height: 80px;
+  }
+
+  .card__about p {
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  /* DOCTORS */
+  .contenedor__card__doctors {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .section__doctors .subtitulo {
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  /* CONTACT US */
+  .section__contact .contenedor__texto h2 {
+    font-size: 20px;
+    line-height: 80px;
+  }
+  .section__contact .contenedor__texto p {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .formulario {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 80px);
+    grid-column-gap: 20px;
+  }
+
+  /**/
+  .formulario input:nth-child(1),
+  input:nth-child(2),
+  input:nth-child(4),
+  input:nth-child(5) {
+    width: 180px;
+    height: 40px;
+  }
+
+  .formulario input:nth-child(3) {
+    grid-column: 1 / span 2;
+    height: 40px;
+  }
+
+  .formulario textarea:nth-child(6) {
+    grid-column: 1 / span 2;
+  }
+
+  .formulario .button {
+    grid-column: 1 / span 2;
+    height: 40px;
+    margin-top: 35px;
   }
 }
