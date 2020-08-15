@@ -14,19 +14,24 @@
         </div>
 
         <nav class="contenedor__menu">
-          <a href="#">Home</a>
-          <a href="#service">services</a>
-          <a href="#about">about us</a>
-          <a href="#dotors">doctors</a>
-          <a href="#contact">Contact</a>
+          <div class="menu">
+            <a href="#">Home</a>
+            <a href="#service">services</a>
+            <a href="#about">about us</a>
+            <a href="#dotors">doctors</a>
+            <a href="#contact">Contact</a>
+          </div>
         </nav>
+
+        <div class="container_hamburgue" id="hamburgue">
+          <img src="img/bars-solid.svg" alt="Menu_logo" id="img_hamburgue" />
+        </div>
       </div>
 
       <section class="textos__header">
-
-        <h1> WELCOME TO R.TEETH </h1>
-        <h2> CREATING BEAUTIFUL SMILES IS OUR SUPER POWER </h2>
-        <h3> FOR A VERY ECONOMICAL PRICE </h3>
+        <h1>WELCOME TO R.TEETH</h1>
+        <h2>CREATING BEAUTIFUL SMILES IS OUR SUPER POWER</h2>
+        <h3>FOR A VERY ECONOMICAL PRICE</h3>
 
         <a href="#contact" class="textos__header__btn">Contact us</a>
       </section>
@@ -225,25 +230,21 @@
                   class="red-input"
                   type="text"
                   name="FullName"
-                  placeholder="  Full Name"
+                  placeholder="Full Name"
                 />
                 <input
                   type="text"
                   name="PhoneNumber"
-                  placeholder="  Phone Number"
+                  placeholder="Phone Number"
                 />
                 <input type="text" name="E-mail" placeholder="  E-mail." />
-                <input
-                  type="date"
-                  name="dd/mm/aaaa"
-                  placeholder="  dd/mm/aaaa"
-                />
-                <input type="text" name="AnyTime" placeholder="  Any Time" />
+                <input type="date" name="dd/mm/aaaa" placeholder="dd/mm/aaaa" />
+                <input type="text" name="AnyTime" placeholder="Any Time" />
 
                 <textarea
                   class="textarea"
                   name="texto"
-                  placeholder="  Notes for the doctor"
+                  placeholder="Notes for the doctor"
                 ></textarea>
 
                 <button class="button">Send</button>
@@ -275,5 +276,7 @@
         </h2>
       </footer>
     </main>
+
+    <script src="js/efecto.js"></script>
   </body>
 </html>
